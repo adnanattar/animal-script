@@ -11,8 +11,7 @@ pip install animal-script
 ```
 
 ## Usage
-To use AnimalScript, simply run the animal-script command followed by your AnimalScript code. For example: <br>
-
+To use AnimalScript, simply run the animal-script command followed by your AnimalScript code. <br> For example: <br>
 ```bash
 animal-script my_script.animal 
 ```
@@ -20,7 +19,7 @@ Replace my_script.animal with the path to your AnimalScript file. <br>
 
 Manual Execution:  <br>
 ```bash
-python -m animal_script.interpreter my_scriptt.animal
+python -m animal_script.interpreter my_script.animal
 ```
 
 ## Syntax
@@ -31,6 +30,7 @@ Elephants: Addition <br>
 Frogs: Subtraction <br>
 Bees: Multiplication <br>
 Lions: Division <br>
+
 Example: <br>
 ```bash
 Elephants 10 + 2
@@ -39,6 +39,7 @@ Elephants 10 + 2
 ## Control Statements
 Monkeys: For loop <br>
 Tiger: If statement <br>
+
 Example: <br>
 ```bash
 Monkeys i 0 5
@@ -47,6 +48,7 @@ Monkeys i 0 5
 ## Input and Output
 Dolphin: Input statement <br>
 Whale: Output statement <br>
+
 Example: <br>
 ```bash
 Dolphin x
