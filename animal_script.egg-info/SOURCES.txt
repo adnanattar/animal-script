@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+animal_script/__init__.py
+animal_script/interpreter.py
+animal_script.egg-info/PKG-INFO
+animal_script.egg-info/SOURCES.txt
+animal_script.egg-info/dependency_links.txt
+animal_script.egg-info/entry_points.txt
+animal_script.egg-info/top_level.txt
