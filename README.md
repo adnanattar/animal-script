@@ -27,4 +27,4 @@ Whale "Hello, World!"
 ```
 
 Contributing
-If you'd like to contribute to AnimalScript, feel free to submit pull requests or open issues on the GitHub repository: https://github.com/adnanattar/animalscript
+If you'd like to contribute to AnimalScript, feel free to submit pull requests or open issues on the GitHub repository: https://github.com/adnanattar/animal-script
