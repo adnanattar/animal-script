@@ -1,3 +1,5 @@
+import sys
+
 class AnimalScript:
     def __init__(self):
         self.variables = {}
@@ -24,8 +26,29 @@ class AnimalScript:
             elif tokens[0] == "Dolphin":
                 var_name = tokens[1]
                 user_input = input(f"Enter value for {var_name}: ")
-                self.variables[var_name] = int(user_input)
-                return f"Variable {var_name} set to {user_input}."
+                if user_input.startswith('"') and user_input.endswith('"'):
+                    # If input is enclosed within double quotes, store it as a string
+                    self.variables[var_name] = user_input.strip('"')
+                    return f"Variable {var_name} set to {user_input}."
+                else:
+                    # Treat input as an integer
+                    self.variables[var_name] = int(user_input)
+                    return f"Variable {var_name} set to {user_input}."
+            elif tokens[0] == "Whale":
+                if len(tokens) < 2:
+                    return "Invalid input. Please provide a message or variable name after 'Whale'."
+                if tokens[1].startswith('"') and tokens[1].endswith('"'):
+                    # If input is enclosed within double quotes, print the data within quotes
+                    message = tokens[1].strip('"')
+                    return f"Whale says: {message}"
+                else:
+                    # Treat input as a variable
+                    var_name = tokens[1]
+                    if var_name in self.variables:
+                        value = self.variables[var_name]
+                        return f"Whale says: {value}" if isinstance(value, str) else f"Variable {var_name} is set to {value}"
+                    else:
+                        return f"Variable {var_name} is not defined."
 
             # Check for arithmetic operations
             operator = tokens[0]
@@ -65,10 +88,14 @@ class AnimalScript:
             return "Roar Condition is False."
 
 if __name__ == "__main__":
+    if len(sys.argv) != 2:
+        print("Usage: python script_name.py input_file.animal")
+        sys.exit(1)
+
+    input_file = sys.argv[1]
+
     animal_script = AnimalScript()
-    while True:
-        user_input = input("Enter AnimalScript expression: ")
-        if user_input.lower() == "exit":
-            break
-        result = animal_script.evaluate(user_input)
-        print(result)
+    with open(input_file, "r") as file:
+        for line in file:
+            result = animal_script.evaluate(line.strip())
+            print(result)
