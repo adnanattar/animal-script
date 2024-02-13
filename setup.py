@@ -18,7 +18,7 @@ setup(
     ],
     entry_points={
         'console_scripts': [
-            'animal-script = animal_script.interpreter:main',
+            'animal-script = animal_script:main',
         ],
     },
 )
