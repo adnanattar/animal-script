@@ -41,14 +41,20 @@ Dolphin age = 10
 
 **Arithmetic Operations:**
 
-Syntax:
-```bash 
-<Animal> <variable_name> <operator> <value>
-```
-Example: 
-```bash
-Elephants total = 20 + 5
-```
+| Animal    | Operation         | Syntax                        | Example                | Output         |
+|-----------|-------------------|-------------------------------|------------------------|----------------|
+| Elephants | Addition          | `Elephants n + m`             | `Elephants 3 + 4`      | Trumpets 7     |
+| Frogs     | Subtraction       | `Frogs n - m`                 | `Frogs 5 - 2`          | Croaks 3       |
+| Bees      | Multiplication    | `Bees n * m`                  | `Bees 3 * 4`           | Buzzes 12      |
+| Lions     | Division          | `Lions n / m`                 | `Lions 10 / 2`         | Roar 5.0       |
+| Giraffes  | Exponentiation    | `Giraffes n ** m`             | `Giraffes 2 ** 3`      | Stretches 8    |
+| Kangaroos | Modulus           | `Kangaroos n % m`             | `Kangaroos 10 % 3`     | Hops 1         |
+| Rhinos    | Floor Division    | `Rhinos n // m`               | `Rhinos 10 // 3`       | Charges 3      |
+| Zebras    | True Division     | `Zebras n / m`                | `Zebras 10 / 3`        | Gallops 3.3333 |
+| Pandas    | Bitwise XOR       | `Pandas n ^ m`                | `Pandas 5 ^ 3`         | Rolls 6        |
+| Lemurs    | Bitwise OR        | `Lemurs n \| m`               | `Lemurs 5 \| 3`        | Leaps 7        |
+| Owls      | Bitwise AND       | `Owls n & m`                  | `Owls 5 & 3`           | Hoots 1        |
+
 
 ### Control Statements:
 

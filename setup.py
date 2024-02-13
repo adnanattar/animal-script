@@ -5,8 +5,8 @@ with open("README.md", "r") as f:
 
 setup(
     name='animal-script',
-    version='0.5',
-    packages=find_packages(),
+    version='0.6',
+    packages=find_packages(where='animal_script'),
     long_description=long_description,
     long_description_content_type="text/markdown",
     url="https://github.com/adnanattar/animal-script",
@@ -18,7 +18,7 @@ setup(
     ],
     entry_points={
         'console_scripts': [
-            'animal-script = animal_script:main',
+            'animal-script = animal_script.main:main',
         ],
     },
 )
