@@ -17,7 +17,7 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v2
         with:
-          python-version: '3.12.2'
+          python-version: '3.x'
 
       - name: Install dependencies
         run: |
@@ -29,6 +29,5 @@ jobs:
           TWINE_USERNAME: adnanattar
           TWINE_PASSWORD: ${{ secrets.PYPI_TOKEN }}
         run: |
-          cd ..  # Navigate to the directory containing setup.py
           python setup.py sdist bdist_wheel
           python -m twine upload --skip-existing --verbose dist/*
