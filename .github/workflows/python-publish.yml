@@ -29,6 +29,6 @@ jobs:
           TWINE_USERNAME: adnanattar
           TWINE_PASSWORD: ${{ secrets.PYPI_TOKEN }}
         run: |
-          cd animal_script  # Navigate to the directory containing setup.py
+          cd ..  # Navigate to the directory containing setup.py
           python setup.py sdist bdist_wheel
           python -m twine upload --skip-existing --verbose dist/*
