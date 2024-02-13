@@ -11,6 +11,8 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Set up Python
         uses: actions/setup-python@v2
@@ -26,7 +28,6 @@ jobs:
         env:
           TWINE_USERNAME: adnanattar
           TWINE_PASSWORD: ${{ secrets.PYPI_TOKEN }}
-        working-directory: ${{ github.workspace }}
         run: |
           python setup.py sdist bdist_wheel
           python -m twine upload --skip-existing --verbose dist/*
