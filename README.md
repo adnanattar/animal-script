@@ -23,7 +23,7 @@ Replace my_script.animal with the path to your AnimalScript file. <br>
 
 Manual Execution:  <br>
 ```bash
-python -m animal_script.interpreter my_script.animal
+python -m animal_script.main
 ```
 
 ## Lessons
