@@ -1,7 +1,31 @@
-from conditions import Conditions
-from arithmetic import Arithmetic
-from error_handling import ErrorHandling
-from data_structures import DataStructures
+import sys
+import os
+
+# Add the parent directory of your package to the sys.path temporarily
+parent_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
+package_dir = os.path.join(parent_dir, "animal_script")
+sys.path.insert(0, parent_dir)
+sys.path.insert(0, package_dir)
+
+# Now you can use absolute imports within your package
+from animal_script.conditions import Conditions
+from animal_script.arithmetic import Arithmetic
+from animal_script.error_handling import ErrorHandling
+from animal_script.data_structures import DataStructures
+
+# Rest of your code...
+
+
+
+# from conditions import Conditions
+# from arithmetic import Arithmetic
+# from error_handling import ErrorHandling
+# from data_structures import DataStructures
+
+# from .conditions import Conditions
+# from .arithmetic import Arithmetic
+# from .error_handling import ErrorHandling
+# from .data_structures import DataStructures
 
 class Control:
     @staticmethod

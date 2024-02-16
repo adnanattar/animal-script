@@ -1,7 +1,31 @@
 import sys
-from arithmetic import Arithmetic
-from conditions import Conditions
-from control import Control
+import os
+
+# Add the parent directory of your package to the sys.path temporarily
+parent_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
+package_dir = os.path.join(parent_dir, "animal_script")
+sys.path.insert(0, parent_dir)
+sys.path.insert(0, package_dir)
+
+# Now you can use absolute imports within your package
+from animal_script.conditions import Conditions
+from animal_script.arithmetic import Arithmetic
+from animal_script.error_handling import ErrorHandling
+from animal_script.data_structures import DataStructures
+from animal_script.control import Control
+
+# Rest of your code...
+
+
+
+# import sys
+# from arithmetic import Arithmetic
+# from conditions import Conditions
+# from control import Control
+
+# from .arithmetic import Arithmetic
+# from .conditions import Conditions
+# from .control import Control
 
 class AnimalScript:
     def __init__(self):

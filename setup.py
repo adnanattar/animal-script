@@ -5,8 +5,8 @@ with open("README.md", "r") as f:
 
 setup(
     name='animal-script',
-    version='0.6',
-    packages=find_packages(where='animal_script'),
+    version='0.7',
+    packages=find_packages(),
     long_description=long_description,
     long_description_content_type="text/markdown",
     url="https://github.com/adnanattar/animal-script",
@@ -14,7 +14,7 @@ setup(
     author_email="hello@androtechbuddy.com",
     license="MIT",
     install_requires=[
-        # Add any dependencies here
+        # No any dependencies
     ],
     entry_points={
         'console_scripts': [
