@@ -14,19 +14,6 @@ from animal_script.error_handling import ErrorHandling
 from animal_script.data_structures import DataStructures
 from animal_script.control import Control
 
-# Rest of your code...
-
-
-
-# import sys
-# from arithmetic import Arithmetic
-# from conditions import Conditions
-# from control import Control
-
-# from .arithmetic import Arithmetic
-# from .conditions import Conditions
-# from .control import Control
-
 class AnimalScript:
     def __init__(self):
         self.variables = {}

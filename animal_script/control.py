@@ -13,20 +13,6 @@ from animal_script.arithmetic import Arithmetic
 from animal_script.error_handling import ErrorHandling
 from animal_script.data_structures import DataStructures
 
-# Rest of your code...
-
-
-
-# from conditions import Conditions
-# from arithmetic import Arithmetic
-# from error_handling import ErrorHandling
-# from data_structures import DataStructures
-
-# from .conditions import Conditions
-# from .arithmetic import Arithmetic
-# from .error_handling import ErrorHandling
-# from .data_structures import DataStructures
-
 class Control:
     @staticmethod
     def evaluate_control(tokens, animal_script):

@@ -24,18 +24,18 @@ class Arithmetic:
             elif operator == "Lions":
                 if operator_symbol == "/":
                     if operand2 == 0:
-                        return "You tried to divide by zero? Well, that's just dividing by my ex. You can't divide by zero, it's undefined!"
+                        return "You tried to divide by zero? Well, that's just arraning fight between Elephant and Ant. You can't divide by zero, it's undefined!"
                     else:
                         # Perform true division operation
                         return f"Roar {operand1 / operand2}"
                 if operator_symbol == "/":
                     if operand2 == 0:
-                        return "You tried to divide by zero? Well, that's just dividing by my ex. You can't divide by zero, it's undefined!"
+                        return "You tried to divide by zero? Well, that's just arraning fight between Elephant and Ant. You can't divide by zero, it's undefined!"
                     else:
                         return f"Roar {operand1 / operand2}"
                 elif operator_symbol == "//":
                     if operand2 == 0:
-                        return "You tried to divide by zero? Well, that's just dividing by my ex. You can't divide by zero, it's undefined!"
+                        return "You tried to divide by zero? Well, that's just arraning fight between Elephant and Ant. You can't divide by zero, it's undefined!"
                     else:
                         return f"Charges {operand1 // operand2}"
                 else:
