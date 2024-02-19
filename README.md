@@ -4,7 +4,6 @@
 AnimalScript is a playful and educational programming language designed for fun and learning. It features a syntax inspired by animals and provides an engaging environment for experimenting with programming concepts.
 
 
-
 ## Installation
 
 You can install AnimalScript using pip: <br>
@@ -47,7 +46,7 @@ To get started with the Animal Script Language Guide, simply visit the following
 In this guide, you'll learn about:
 
 - Basic syntax and structure of Animal Script
-- Arithmatic operations
+- Arithmetic operations
 - Control statements like for loop
 - Conditional statements like if condition
 - Input and output statements
@@ -60,151 +59,12 @@ Navigate through the guide using the table of contents on the left side of the p
 
 Feel free to bookmark the guide for quick access whenever you need assistance or reference while working with Animal Script. 
 
-## Lessons
-
-**Variable Assignment:**
-
-Syntax: 
-```bash 
-<Animal> <variable_name> = <value>
-```
-Example: 
-```bash
-Dolphin age = 10
-```
-
-**Arithmetic Operations:**
-
-| Animal    | Operation         | Syntax                        | Example                | Output         |
-|-----------|-------------------|-------------------------------|------------------------|----------------|
-| Elephants | Addition          | `Elephants n + m`             | `Elephants 3 + 4`      | Trumpets 7     |
-| Frogs     | Subtraction       | `Frogs n - m`                 | `Frogs 5 - 2`          | Croaks 3       |
-| Bees      | Multiplication    | `Bees n * m`                  | `Bees 3 * 4`           | Buzzes 12      |
-| Lions     | Division          | `Lions n / m`                 | `Lions 10 / 2`         | Roar 5.0       |
-| Giraffes  | Exponentiation    | `Giraffes n ** m`             | `Giraffes 2 ** 3`      | Stretches 8    |
-| Kangaroos | Modulus           | `Kangaroos n % m`             | `Kangaroos 10 % 3`     | Hops 1         |
-| Rhinos    | Floor Division    | `Rhinos n // m`               | `Rhinos 10 // 3`       | Charges 3      |
-| Zebras    | True Division     | `Zebras n / m`                | `Zebras 10 / 3`        | Gallops 3.3333 |
-| Pandas    | Bitwise XOR       | `Pandas n ^ m`                | `Pandas 5 ^ 3`         | Rolls 6        |
-| Lemurs    | Bitwise OR        | `Lemurs n \| m`               | `Lemurs 5 \| 3`        | Leaps 7        |
-| Owls      | Bitwise AND       | `Owls n & m`                  | `Owls 5 & 3`           | Hoots 1        |
-
-
-### Control Statements:
-
-**For Loop:**
-
-Syntax: 
-```bash
-Monkeys <variable_name> <start> <end> [<step>]
-```
-Example: 
-```bash
-Monkeys i 0 5
-```
-
-**If Condition:**
-
-Syntax: 
-```bash
-Tiger <condition>
-```
-Example: 
-```bash
-Tiger i < 10
-```
-
-**Print Statement:**
-
-Syntax: 
-```bash
-Whale <message>
-```
-Example: 
-```bash
-Whale "Hello, World!"
-```
-
-**Input Statement:**
-
-Syntax: 
-```bash
-Dolphin <variable_name>
-```
-Example: 
-```bash
-Dolphin age
-```
-
-**Comments:**
-
-Syntax: 
-```bash
-#<comment>
-```
-
-Example: 
-```bash
-# This is a comment
-```
-
-**Concatenation:**
-
-Syntax: 
-```bash
-<Animal> <variable_name> = <value1> + <value2>
-```
-Example: 
-```bash
-Elephants message = "Hello" + "World"
-```
-
-**If Statement with Print:**
-
-Syntax:
-```bash
-Tiger <condition>
-Whale <message>
-```
-
-Example:
-```bash
-Tiger age > 18
-Whale "You are an adult"
-```
-
-**If Statement with Variable:**
-
-Syntax:
-```bash
-Tiger <condition>
-Dolphin <variable_name>
-```
-
-Example:
-```bash
-Tiger age < 18
-Dolphin underage
-```
-
-**For Loop with Print:**
-
-Syntax:
-```bash
-Monkeys <variable_name> <start> <end> [<step>]
-Whale <message>
-```
-
-Example:
-```bash
-Monkeys i 1 5
-Whale "Iteration: i"
-```
 ## License
 
 [MIT](https://choosealicense.com/licenses/mit/)
 
 This project is licensed under the MIT License - see the LICENSE file for details.
+
 ## Contributing
 
 Contributions are always welcome!
@@ -225,20 +85,6 @@ You can install AnimalScript using pip:
 ```bash
 pip install animal-script
 ```
-
-### How do I use AnimalScript?
-AnimalScript files typically have a `.animal` extension. You can run an AnimalScript file using the `animal-script` command followed by the filename:
-
-```bash
-animal-script my_script.animal
-```
-
-### What are some common control statements in AnimalScript?
-AnimalScript provides intuitive control statements that mimic natural language. Some common ones include:
-- `Monkeys`: For loop
-- `Tiger`: If condition
-- `Dolphin`: Input statement
-- `Whale`: Print statement
 
 ### Can I contribute to AnimalScript?
 Yes, contributions are welcome! Feel free to submit pull requests or open issues on the GitHub repository.
@@ -269,22 +115,6 @@ If you have any further questions or need assistance, don't hesitate to ask!
 ## Authors
 
 - [@adnanattar](https://www.github.com/adnanattar)
-
-
-## Features
-
-- **Natural Language Syntax**: AnimalScript uses a natural language syntax that mimics everyday speech, making it easy to read and write.
-- **Control Statements**: Intuitive control statements such as `Monkeys` for loops, `Tiger` for conditional statements, `Dolphin` for user input, and `Whale` for output.
-- **Arithmetic Operations**: Supports basic arithmetic operations such as addition, subtraction, multiplication, and division.
-- **Variable Management**: Easily manage variables and store values for later use.
-- **Error Handling**: Provides informative error messages for invalid input or operations.
-- **File Input**: Run AnimalScript files directly from the command line.
-- **Extensible**: Easily extendable with custom functions and modules.
-- **Open Source**: AnimalScript is open-source and available under the MIT License.
-- **Cross-Platform**: Runs on any platform that supports Python.
-
-These are just a few of the features that make AnimalScript a powerful and versatile scripting language.
-
 
 ## Support
 
