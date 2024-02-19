@@ -26,6 +26,40 @@ Manual Execution:  <br>
 python -m animal_script.main
 ```
 
+## IDE
+Which IDE should I use for writing AnimalScript code?
+You can use any text editor or IDE of your choice to write AnimalScript code. Additionally, you can use the AnimalScript IDE available at 
+[https://animal-script-ide.onrender.com/](https://animal-script-ide.onrender.com/) for a dedicated environment tailored to writing and executing AnimalScript code.
+
+## Animal Script Language Guide
+Welcome to the Animal Script Language Guide!
+
+This guide is designed to help you navigate through the various features and functionalities of the Animal Script language. Whether you're a beginner or an experienced developer, you'll find useful information and examples to enhance your understanding and proficiency in Animal Script.
+
+## Getting Started
+
+To get started with the Animal Script Language Guide, simply visit the following link:
+
+[Animal Script Language Guide](https://adnanattar.gitbook.io/animal-script-language-guide/)
+
+## What You'll Learn
+
+In this guide, you'll learn about:
+
+- Basic syntax and structure of Animal Script
+- Arithmatic operations
+- Control statements like for loop
+- Conditional statements like if condition
+- Input and output statements
+- Frequently asked questions (FAQs) about Animal Script
+- Licensing and contributing to the Animal Script project
+
+## How to Use
+
+Navigate through the guide using the table of contents on the left side of the page. You can click on each topic to learn more about it, view code examples, and explore related concepts.
+
+Feel free to bookmark the guide for quick access whenever you need assistance or reference while working with Animal Script. 
+
 ## Lessons
 
 **Variable Assignment:**
