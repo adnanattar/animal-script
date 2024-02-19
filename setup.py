@@ -5,7 +5,7 @@ with open("README.md", "r") as f:
 
 setup(
     name='animal-script',
-    version='0.7',
+    version='0.8',
     packages=find_packages(),
     long_description=long_description,
     long_description_content_type="text/markdown",
