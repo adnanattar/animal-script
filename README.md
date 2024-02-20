@@ -3,6 +3,7 @@
 
 AnimalScript is a playful and educational programming language designed for fun and learning. It features a syntax inspired by animals and provides an engaging environment for experimenting with programming concepts.
 
+[![Downloads](https://static.pepy.tech/badge/animal-script)](https://pepy.tech/project/animal-script)
 
 ## Installation
 
