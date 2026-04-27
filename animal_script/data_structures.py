@@ -1,21 +1,26 @@
+"""Educational examples for Python data structures with animal-themed data."""
+
+
 class DataStructures:
+    """Return simple list, dictionary, and set examples.
+
+    These helpers are not part of the command interpreter yet; they exist as
+    examples that can be tested and reused by future language features.
+    """
+
     @staticmethod
     def list_example():
+        """Build and mutate a list of animal names."""
         try:
-            # Creating a list of animals
             animal_list = ["Elephant", "Lion", "Giraffe", "Zebra", "Tiger"]
 
-            # Accessing elements of a list
+            # Keep a couple of access examples visible for learners.
             first_animal = animal_list[0]
             last_animal = animal_list[-1]
+            _ = (first_animal, last_animal)
 
-            # Modifying elements of a list
             animal_list[2] = "Monkey"
-
-            # Adding elements to a list
             animal_list.append("Bear")
-
-            # Removing elements from a list
             animal_list.remove("Lion")
 
             return animal_list
@@ -24,21 +29,22 @@ class DataStructures:
 
     @staticmethod
     def dictionary_example():
+        """Build and mutate a dictionary of animal characteristics."""
         try:
-            # Creating a dictionary of animal characteristics
-            animal_dict = {'Elephant': 'Big', 'Lion': 'Fierce', 'Giraffe': 'Tall', 'Zebra': 'Striped', 'Tiger': 'Predator'}
+            animal_dict = {
+                "Elephant": "Big",
+                "Lion": "Fierce",
+                "Giraffe": "Tall",
+                "Zebra": "Striped",
+                "Tiger": "Predator",
+            }
 
-            # Accessing elements of a dictionary
             elephant_characteristic = animal_dict['Elephant']
             tiger_characteristic = animal_dict.get('Tiger')
+            _ = (elephant_characteristic, tiger_characteristic)
 
-            # Modifying elements of a dictionary
             animal_dict['Giraffe'] = 'Long Neck'
-
-            # Adding elements to a dictionary
             animal_dict['Hippo'] = 'Heavy'
-
-            # Removing elements from a dictionary
             del animal_dict['Zebra']
 
             return animal_dict
@@ -47,14 +53,11 @@ class DataStructures:
 
     @staticmethod
     def set_example():
+        """Build and mutate a set of animal sounds."""
         try:
-            # Creating a set of animal sounds
             animal_sounds = {"Roar", "Trumpet", "Growl", "Snarl"}
 
-            # Adding elements to a set
             animal_sounds.add("Howl")
-
-            # Removing elements from a set
             animal_sounds.remove("Snarl")
 
             return animal_sounds

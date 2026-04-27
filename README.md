@@ -1,123 +1,205 @@
+# AnimalScript
 
-# Animal-Script
-
-AnimalScript is a playful and educational programming language designed for fun and learning. It features a syntax inspired by animals and provides an engaging environment for experimenting with programming concepts.
+AnimalScript is a small educational programming language with animal-themed
+commands. It is designed for beginners who want to practice basic programming
+ideas such as arithmetic, variables, loops, conditions, input, and output.
 
 [![Downloads](https://static.pepy.tech/badge/animal-script)](https://pepy.tech/project/animal-script)
 
 ## Installation
 
-You can install AnimalScript using pip: <br>
+AnimalScript supports Python 3.9 and newer.
+
+Install the published package from PyPI:
 
 ```bash
 pip install animal-script
 ```
-    
-## Usage/Examples
 
-To use AnimalScript, simply run the animal-script command followed by your AnimalScript code. <br> For example: <br>
+For local development, clone the repository and install it in editable mode:
+
 ```bash
-animal-script my_script.animal 
+git clone https://github.com/adnanattar/animal-script.git
+cd animal-script
+python -m pip install -e .
 ```
-Replace my_script.animal with the path to your AnimalScript file. <br>
 
-Manual Execution:  <br>
+## Quick Start
+
+Run the interactive interpreter:
+
 ```bash
 python -m animal_script.main
 ```
 
-## IDE
-Which IDE should I use for writing AnimalScript code?
-You can use any text editor or IDE of your choice to write AnimalScript code. Additionally, you can use the AnimalScript IDE available at 
-[https://animal-script-ide.onrender.com/](https://animal-script-ide.onrender.com/) for a dedicated environment tailored to writing and executing AnimalScript code.
+Example session:
 
-## Animal Script Language Guide
-Welcome to the Animal Script Language Guide!
+```text
+Enter AnimalScript commands manually. Type 'exit' to quit.
+>>> Elephants 3 + 4
+Trumpets 7
+>>> Whale "Hello"
+Whale says: Hello
+>>> exit
+```
 
-This guide is designed to help you navigate through the various features and functionalities of the Animal Script language. Whether you're a beginner or an experienced developer, you'll find useful information and examples to enhance your understanding and proficiency in Animal Script.
+You can also run a `.animal` file:
 
-## Getting Started
+```bash
+python -m animal_script.main examples/guide_demo.animal
+```
 
-To get started with the Animal Script Language Guide, simply visit the following link:
+After installing the package, the console command is available too:
 
-[Animal Script Language Guide](https://adnanattar.gitbook.io/animal-script-language-guide/)
+```bash
+animal-script examples/guide_demo.animal
+```
 
-## What You'll Learn
+AnimalScript statements must be typed inside the interpreter or saved inside a
+`.animal` file. If you type `Elephants 3 + 4` directly in your terminal shell,
+the shell will try to run `Elephants` as an operating-system command.
 
-In this guide, you'll learn about:
+## Example Program
 
-- Basic syntax and structure of Animal Script
-- Arithmetic operations
-- Control statements like for loop
-- Conditional statements like if condition
-- Input and output statements
-- Frequently asked questions (FAQs) about Animal Script
-- Licensing and contributing to the Animal Script project
+```animal
+Elephants 3 + 4
+Monkeys i 0 5
+Tiger i < 10
+Whale "Hello"
+```
 
-## How to Use
+Output:
 
-Navigate through the guide using the table of contents on the left side of the page. You can click on each topic to learn more about it, view code examples, and explore related concepts.
+```text
+Trumpets 7
+i set to 0.
+i set to 1.
+i set to 2.
+i set to 3.
+i set to 4.
+i set to 5.
+Roar Condition is True.
+Whale says: Hello
+```
 
-Feel free to bookmark the guide for quick access whenever you need assistance or reference while working with Animal Script. 
+## Language Reference
 
-## License
+### Arithmetic
 
-[MIT](https://choosealicense.com/licenses/mit/)
+| Command | Operation | Syntax | Example | Output |
+| --- | --- | --- | --- | --- |
+| `Elephants` | Addition | `Elephants n + m` | `Elephants 3 + 4` | `Trumpets 7` |
+| `Frogs` | Subtraction | `Frogs n - m` | `Frogs 5 - 2` | `Croaks 3` |
+| `Bees` | Multiplication | `Bees n * m` | `Bees 3 * 4` | `Buzzes 12` |
+| `Lions` | Division | `Lions n / m` | `Lions 10 / 2` | `Roar 5.0` |
+| `Giraffes` | Exponentiation | `Giraffes n ** m` | `Giraffes 2 ** 3` | `Stretches 8` |
+| `Kangaroos` | Modulus | `Kangaroos n % m` | `Kangaroos 10 % 3` | `Hops 1` |
+| `Rhinos` | Floor division | `Rhinos n // m` | `Rhinos 10 // 3` | `Charges 3` |
+| `Zebras` | True division | `Zebras n / m` | `Zebras 10 / 3` | `Gallops 3.3333` |
+| `Pandas` | Bitwise XOR | `Pandas n ^ m` | `Pandas 5 ^ 3` | `Rolls 6` |
+| `Lemurs` | Bitwise OR | `Lemurs n \| m` | `Lemurs 5 \| 3` | `Leaps 7` |
+| `Owls` | Bitwise AND | `Owls n & m` | `Owls 5 & 3` | `Hoots 1` |
 
-This project is licensed under the MIT License - see the LICENSE file for details.
+Operands can be integer literals or variables already stored in the current
+interpreter session.
+
+### Control Statement
+
+`Monkeys` creates an inclusive loop:
+
+```animal
+Monkeys i 0 5
+```
+
+This sets `i` to `0`, `1`, `2`, `3`, `4`, and `5`. A custom step is optional:
+
+```animal
+Monkeys i 0 5 2
+```
+
+### Conditional Statement
+
+`Tiger` evaluates a boolean value or a simple comparison:
+
+```animal
+Tiger i < 10
+Tiger True
+```
+
+Supported comparison operators are `<`, `<=`, `>`, `>=`, `==`, and `!=`.
+
+### Print Statement
+
+`Whale` prints a string literal or a known variable:
+
+```animal
+Whale "Hello AnimalScript"
+Whale i
+```
+
+### Input Statement
+
+`Dolphin` asks the user for a value and stores it in a variable:
+
+```animal
+Dolphin age
+Elephants age + 5
+```
+
+Numeric input is stored as an integer. Other input is stored as text.
+
+## Development
+
+Install development dependencies:
+
+```bash
+python -m pip install -r requirements-dev.txt
+```
+
+Run the test suite:
+
+```bash
+python -m unittest discover -v
+python -m pytest -q
+```
+
+Check package metadata:
+
+```bash
+python setup.py check --metadata --strict
+```
+
+## Project Layout
+
+```text
+animal_script/
+  main.py            # CLI and top-level evaluator
+  arithmetic.py      # Arithmetic and bitwise commands
+  control.py         # Monkeys, Tiger, Dolphin, and Whale commands
+  conditions.py      # Tiger condition evaluation helpers
+  file_operations.py # File helper utilities
+  data_structures.py # Educational data-structure examples
+tests/               # Unit and regression tests
+examples/            # Runnable .animal examples
+```
+
+## Documentation
+
+The public language guide is available at:
+
+<https://adnanattar.gitbook.io/animal-script-language-guide>
 
 ## Contributing
 
-Contributions are always welcome!
+Contributions are welcome. Before opening a pull request, run the test commands
+above and update documentation if your change affects language behavior.
 
-See `contributing.md` for ways to get started.
+See [contributing.md](contributing.md) and [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md).
 
-If you'd like to contribute to AnimalScript, feel free to submit pull requests or open issues on the GitHub repository: 
-https://github.com/adnanattar/animal-script
+## License
 
-## Frequently Asked Questions (FAQ)
+AnimalScript is released under the [MIT License](LICENSE).
 
-### What is AnimalScript?
-AnimalScript is a domain-specific language (DSL) designed to mimic natural language syntax, making it intuitive and easy to understand. It is primarily used for scripting and automation tasks.
+## Author
 
-### How do I install AnimalScript?
-You can install AnimalScript using pip:
-
-```bash
-pip install animal-script
-```
-
-### Can I contribute to AnimalScript?
-Yes, contributions are welcome! Feel free to submit pull requests or open issues on the GitHub repository.
-
-### How do I report a bug or suggest a feature?
-You can report bugs or suggest features by opening an issue on the GitHub repository.
-
-### Where can I find more information about AnimalScript?
-You can find more information, documentation, and examples on the AnimalScript GitHub repository: [link](https://github.com/adnanattar/animal-script).
-
-### Is there a code of conduct for contributing to AnimalScript?
-Yes, please refer to the [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md) file for guidelines on contributing to AnimalScript.
-
-### How can I get help or support?
-If you need help or have questions about AnimalScript, you can reach out to the community on the GitHub repository or the official support channels.
-
-### Can I use AnimalScript for commercial projects?
-Yes, AnimalScript is open-source and available under the [MIT License](LICENSE). You are free to use it for commercial projects.
-
-### How do I uninstall AnimalScript?
-You can uninstall AnimalScript using pip:
-
-```bash
-pip uninstall animal-script
-```
-
-If you have any further questions or need assistance, don't hesitate to ask!
-## Authors
-
-- [@adnanattar](https://www.github.com/adnanattar)
-
-## Support
-
-For any questions or support, please contact support@androtechbuddy.com.
-
+Created by [Adnan B. Attar](https://github.com/adnanattar).

@@ -2,20 +2,26 @@
 
 ## Supported Versions
 
-Use this section to tell people about which versions of your project are
-currently being supported with security updates.
+AnimalScript is currently maintained from the latest released version on PyPI
+and the `main` branch of this repository.
 
-| Version | Supported          |
-| ------- | ------------------ |
-| 5.1.x   | :white_check_mark: |
-| 5.0.x   | :x:                |
-| 4.0.x   | :white_check_mark: |
-| < 4.0   | :x:                |
+| Version | Supported |
+| --- | --- |
+| 0.8.x | Yes |
+| Older versions | No |
 
 ## Reporting a Vulnerability
 
-Use this section to tell people how to report a vulnerability.
+Please report security issues privately instead of opening a public issue.
 
-Tell them where to go, how often they can expect to get an update on a
-reported vulnerability, what to expect if the vulnerability is accepted or
-declined, etc.
+Email: support@androtechbuddy.com
+
+Include:
+
+- A short description of the issue.
+- Steps to reproduce it.
+- The affected version or commit.
+- Any proof-of-concept input file, if available.
+
+You can expect an initial response after the report is reviewed. If the issue
+is accepted, a fix will be prepared before public disclosure where practical.

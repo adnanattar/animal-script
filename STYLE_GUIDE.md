@@ -1,66 +1,95 @@
 # AnimalScript Style Guide
 
-This style guide outlines the conventions and best practices to follow when writing code in the AnimalScript language. Adhering to these guidelines helps maintain consistency and readability across AnimalScript codebases.
+This guide describes conventions for writing readable `.animal` files that work
+with the current AnimalScript interpreter.
 
-## Table of Contents
+## File Format
 
-1. [Naming Conventions](#naming-conventions)
-2. [Formatting](#formatting)
-3. [Comments](#comments)
-4. [Control Structures](#control-structures)
-5. [Whitespace](#whitespace)
-6. [Error Handling](#error-handling)
+- Use the `.animal` extension for AnimalScript programs.
+- Write one statement per line.
+- Keep examples short and beginner-friendly.
+- Use blank lines only when they make a longer file easier to scan.
 
-## Naming Conventions
+## Variables
 
-- **Variables**: Use descriptive and meaningful names for variables. Follow camelCase naming convention.
-  ```animal-script
-  Elephant totalApples = 10
-  ```
-- **Control Statements**: Use clear and concise names for control statements.
-  ```animal-script
-  Monkeys i 0 5
-  ```
-- **Functions**: Use descriptive names for functions. Follow camelCase naming convention.
-  ```animal-script
-  Whale "Hello, World!"
-  ```
+- Use descriptive names for values you read with `Dolphin` or create with
+  `Monkeys`.
+- Prefer lower camel case for multi-word names.
 
-## Formatting
+```animal
+Dolphin totalApples
+Elephants totalApples + 5
+```
 
-- **Indentation**: Use four spaces for indentation.
-- **Line Length**: Limit lines to a maximum of 80 characters.
-- **Braces**: Place opening braces on the same line as the control statement.
-  ```animal-script
-  Tiger i < 5
-  ```
+## Arithmetic
+
+- Put spaces around operators.
+- Use the animal command that matches the operation.
+
+```animal
+Elephants 3 + 4
+Frogs 10 - 2
+Bees 6 * 7
+Zebras 10 / 3
+```
+
+## Control Statements
+
+Use `Monkeys` for inclusive loops:
+
+```animal
+Monkeys i 0 5
+```
+
+Use the optional step only when it helps readability:
+
+```animal
+Monkeys i 0 10 2
+```
+
+## Conditions
+
+Use `Tiger` with a boolean literal or a simple comparison:
+
+```animal
+Tiger True
+Tiger i < 10
+Tiger totalApples >= 5
+```
+
+Supported comparison operators are `<`, `<=`, `>`, `>=`, `==`, and `!=`.
+
+## Input and Output
+
+Use `Dolphin` for input:
+
+```animal
+Dolphin age
+```
+
+Use `Whale` for output. Quote text that contains spaces:
+
+```animal
+Whale "Hello AnimalScript"
+Whale age
+```
 
 ## Comments
 
-- **Inline Comments**: Use inline comments sparingly to explain complex logic or clarify code when necessary.
+The interpreter uses shell-style parsing, so `#` starts a comment when it is not
+inside quotes.
 
-## Control Structures
-
-- **Monkeys Loop**: Use the `Monkeys` control statement for loop constructs.
-  ```animal-script
-  Monkeys i 0 5
-  ```
-
-- **Tiger Condition**: Use the `Tiger` control statement for conditional constructs.
-  ```animal-script
-  Tiger i < 5
-  ```
-
-## Whitespace
-
-- **Spaces**: Use spaces around operators and control statements for clarity.
-  ```animal-script
-  Elephant totalApples = 10
-  ```
+```animal
+Elephants 3 + 4 # Adds two numbers
+Whale "Hello # not a comment"
+```
 
 ## Error Handling
 
-- **Validation**: Validate user inputs and handle errors gracefully. Provide informative error messages where necessary.
-- **Try-Catch**: Use try-catch blocks to handle exceptions and errors.
+Prefer small programs and simple statements. If a command fails, check:
 
-Adhering to these guidelines will improve the consistency and readability of AnimalScript codebases.
+- The animal keyword is spelled exactly as documented.
+- The operator matches the command.
+- Variables are assigned before they are used.
+- AnimalScript commands are run inside the interpreter or from a `.animal` file,
+  not directly in the terminal shell.
