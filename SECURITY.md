@@ -7,14 +7,14 @@ and the `main` branch of this repository.
 
 | Version | Supported |
 | --- | --- |
-| 0.8.x | Yes |
+| 1.0.x | Yes |
 | Older versions | No |
 
 ## Reporting a Vulnerability
 
 Please report security issues privately instead of opening a public issue.
 
-Email: support@androtechbuddy.com
+Email: hello@adnanattar.com
 
 Include:
 
